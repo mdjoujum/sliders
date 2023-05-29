@@ -107,7 +107,7 @@ figure {
 /* On hover, add a black background color with a little bit of transparency */
 .prev:hover,
 .next:hover {
-  background-color: hsla(36, 100%, 50%, 0.833);
+  background-color: hsla(309, 100%, 50%, 0.833);
 }
 
 /* Caption text */
