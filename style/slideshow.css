@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  min-height: 100vh;
+  min-width: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #99FFAF;
+  background: linear-gradient(135deg, #f1fff4, #b4ffb8);
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  max-height: 100vh;
+  margin: 0;
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: start;
+}
+
+figure {
+  height: 10em;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3em;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 600px;
+  height: 90vh;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  border: 5px solid #373638;
+  padding: 2em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  text-align: justify;  
+  background-color: rgb(236, 250, 248);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+}
+
+.slideshow-container .fade {
+  width: 90%;
+  height: 50vh;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: none;
+}
+
+/* Image */
+.figure {
+  width: 99%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+  color: snow;
+  background-color: hsla(261, 100%, 65%, 0.59);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  border-radius: 50%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit of transparency */
+.prev:hover,
+.next:hover {
+  background-color: hsla(257, 76%, 50%, 0.94);
+}
+
+/* Caption text */
+.text {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  color: #1f0343;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #7d7777;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  background-color: hsla(243, 76%, 50%, 0.6);
+  color: aliceblue;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #110aa5;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 8px;
+  }
+  .slideshow-container{
+    width: 50%;
+  }
+}

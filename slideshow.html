@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow</title>
+    <link rel="stylesheet" href="style/slideshow.css">
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<div class="slideshow-container">
+  <div> 
+      <div class="mySlides fade" style="display: block;">
+        <div class="numbertext">1 / 6</div>
+        <div class="figure">
+          <img src="images/joy.webp">
+        </div>
+        <div class="text">Joie</div>
+        <div class="text">Je suis content</div>
+        <div class="text">Je suis content</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <div class="figure">
+          <img src="images/anger.webp">
+        </div>
+        <div class="text">Colère</div>
+        <div class="text">Faché</div>
+        <div class="text">Énervé</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <div class="figure">
+          <img src="images/sad.webp">
+        </div>
+        <div class="text">Tristesse - Triste </div>
+        <div class="text">Je suis triste </div>
+        <div class="text">Il pleure car il est triste</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <div class="figure">
+          <img src="images/sad.webp">
+        </div>
+        <div class="text">Tristesse - Triste </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <div class="figure">
+          <img src="images/sad.webp">
+        </div>
+        <div class="text">Surprise</div>
+        <div class="text">Wouah! la belle surprise!</div>
+      </div>   
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <div class="figure">
+          <img src="images/disgust.webp">
+        </div>
+        <div class="text">Dégout</div>
+        <div class="text">Eurgh! c'est pas bon, je suis dégouté.'</div>
+      </div>   
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+  </div>
+
+  </div>
+</div>    
+
+<a class="next" onclick="plusSlides(1)">❯</a>
+</body>
+</html>
