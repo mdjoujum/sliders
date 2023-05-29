@@ -12,13 +12,13 @@ html{
 
 body {
   font-family: Verdana, sans-serif;
-  max-height: 100vh;
-  margin: 0;
+  margin: auto;
   padding-inline: 2em;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-around;
   align-items: start;
+  gap: 2em;
 }
 
 figure {
@@ -32,7 +32,9 @@ figure {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 600px;
+  min-width: 400px;
+  width: 60vh;
+  min-height: 500px;
   height: 90vh;
   position: relative;
   margin: auto;
@@ -44,8 +46,9 @@ figure {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  text-align: justify;  
-  background-color: rgb(236, 250, 248);
+  text-align: justify;
+  background: #F6E063;
+  background: linear-gradient(135deg, #ffffff, #c2faff);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
 }
@@ -83,17 +86,17 @@ figure {
 .prev,
 .next {
   cursor: pointer;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 40vh;
   color: snow;
-  background-color: hsla(261, 100%, 50%, 0.833);
+  background-color: hsl(247, 100%, 66%);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5em;
   transition: 0.6s ease;
   user-select: none;
   border-radius: 50%;
@@ -116,14 +119,20 @@ figure {
   height: auto;
   margin: auto;
   color: #1f0343;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   width: 100%;
+}
+.dot-block{
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  gap: 12px;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #7d7777;
+  color: #aaaaaa;
   font-size: 2em;
   font-weight: bold;
   padding: 8px 12px;
@@ -135,18 +144,15 @@ figure {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 3em;
-  background-color: hsla(243, 76%, 50%, 0.6);
+  background-color: hsla(243, 76%, 50%, 0.3);
   color: aliceblue;
   display: inline-block;
   transition: background-color 0.6s ease;
+  border-radius: 50%;
 }
-
 .active,
 .dot:hover {
-  background-color: #110aa5;
+  background-color: #f97713;
 }
 
 /* Fading animation */
@@ -165,13 +171,48 @@ figure {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 8px;
+@media only screen and (max-width: 48em) {
+  body{
+    max-width:100vw;
+    margin: 0;
+    padding: 0;
+    align-items: center
   }
-  .slideshow-container{
-    width: 50%;
+  .slideshow-container {
+    max-width: 80vw;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #373638;
+    padding: 2em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 250, 248);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+  .slideshow-container .fade {
+    width: 100%;
+    height: auto;
+  }
+  .prev,
+  .next {
+    margin-top: 2em;
+    font-size: 0.5em;
+  }
+  .text:first-element {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+  .dot-block{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
   }
 }
