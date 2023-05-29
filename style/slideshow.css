@@ -5,8 +5,6 @@ html{
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #8b22ee, #0d24f6);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -178,36 +176,36 @@ body {
 html{
   margin: 0;
   padding: 0;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(135deg, #8b22ee, #0d24f6);
   background-size: cover;
   background-repeat: no-repeat;
 }
   body{
-    width: 100vw;
-    height: 100vw;
-    align-items: center;
+    width:80vw;
+    margin: auto;
+    justify-content: space-evenly;
     padding-inline: 2em;
+    font-size: .7em;
   }
   .slideshow-container {
     min-width: 200px;
     max-width: 300px;
-    width: 80vh;
+    width: 100vh;
     min-height: 250px;
     min-height: 300px;
-    height: 60vh;
+    height: 55vh;
     margin: auto;
     box-sizing: border-box;
     border: 2px solid #373638;
     padding: 1em;
-    margin-top: 3em;
     display: block;
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
     text-align: justify;
-    background: #F6E063;
-    background: linear-gradient(135deg, #ffffff, #c2faff);
+    background:  hsla(185, 100%, 88%, .9);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     overflow: auto;
   }
@@ -218,7 +216,10 @@ html{
   .numbertext{
     font-size: .8em;
   }
-  
+  .prev, .next{
+    width: .7em;
+    height: .7em;
+  }
   .dot-block{
     width:100%;
     margin: auto;
@@ -236,7 +237,7 @@ html{
 
 .text_img_block .figure{
   height: 100%;
-  border: 1px solid wheat;
+  width:100%;
 }
 .text_img_block text{
   width: 100px;
