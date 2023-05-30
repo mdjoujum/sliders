@@ -225,9 +225,9 @@ html{
     font-size: .8em;
   }
   .prev, .next{
-    width: .6em;
-    height: .6em;
-    font-size:.7em;
+    width: .8em;
+    height: .8em;
+    font-size:.9em;
   }
   .dot-block{
     width:100%;
